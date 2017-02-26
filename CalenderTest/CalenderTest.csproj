@@ -61,11 +61,16 @@
   <ItemGroup>
     <Compile Include="CalenderTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="InsuranceTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Calender\Calender.csproj">
       <Project>{49e392fc-6de3-4a37-b493-15efb9f74151}</Project>
       <Name>Calender</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Insurance\Insurance.csproj">
+      <Project>{9601a270-437b-4971-b9af-06fdf290b09b}</Project>
+      <Name>Insurance</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

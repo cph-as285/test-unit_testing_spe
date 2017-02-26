@@ -6,11 +6,14 @@ using System.Threading.Tasks;
 
 namespace Insurance
 {
-    public class Deductible
+    public static class Deductible
     {
         public static int CalculateReimburse(bool deductibleMet, TypeOfVisit typeOfVisit)
         {
-            return 0;
+            if (!deductibleMet)
+                return 0;
+
+            return typeOfVisit == TypeOfVisit.HospitalVisit ? 80 : 50;
         }
     }
 }
