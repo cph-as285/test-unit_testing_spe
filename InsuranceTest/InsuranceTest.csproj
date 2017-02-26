@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{802111E5-F6FC-4C6B-B1B9-98FE426E513C}</ProjectGuid>
+    <ProjectGuid>{569338E8-FF13-4CA2-A0FA-6BB50407CB3D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CalenderTest</RootNamespace>
-    <AssemblyName>CalenderTest</AssemblyName>
+    <RootNamespace>InsuranceTest</RootNamespace>
+    <AssemblyName>InsuranceTest</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <NuGetPackageImportStamp>
@@ -59,20 +59,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CalenderTest.cs" />
+    <Compile Include="InsuranceTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Calender\Calender.csproj">
-      <Project>{49e392fc-6de3-4a37-b493-15efb9f74151}</Project>
-      <Name>Calender</Name>
+    <ProjectReference Include="..\Insurance\Insurance.csproj">
+      <Project>{9601a270-437b-4971-b9af-06fdf290b09b}</Project>
+      <Name>Insurance</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
